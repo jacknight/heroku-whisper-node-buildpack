@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -d "$1/node_modules/whisper-node/lib/whisper.cpp" ]; then
+  exit 0
+else
+  echo "Buildpack did not find whisper-node in node_modules."
+  exit 1
+fi
