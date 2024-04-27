@@ -3,3 +3,5 @@
 cd "$1/node_modules/whisper-node/lib/whisper.cpp" || exit
 
 make
+
+cd $HOME
